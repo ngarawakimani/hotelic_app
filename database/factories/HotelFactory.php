@@ -22,14 +22,5 @@ $factory->define(Hotel::class, function (Faker $faker) {
         'phone_number' => $faker->e164PhoneNumber,
         'email' => $faker->unique()->safeEmail,
         'hotel_image' => Storage::disk('public')->putFile('images', $imageFile),
-
-        // 'title' => $faker->company,
-        // 'content' => $faker->paragraph,
-        // 'user_id' => function () {
-        //     return factory(App\User::class)->create()->id;
-        // },
-        // 'user_type' => function (array $post) {
-        //     return App\User::find($post['user_id'])->type;
-        // }
     ];
 });

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Booking;
 use Illuminate\Http\Request;
+use App\Http\Resources\Booking as BookingResource;
 
 class BookingController extends Controller
 {
@@ -14,7 +15,7 @@ class BookingController extends Controller
      */
     public function index()
     {
-        //
+        return BookingResource::collection(Booking::paginate(10));
     }
 
     /**

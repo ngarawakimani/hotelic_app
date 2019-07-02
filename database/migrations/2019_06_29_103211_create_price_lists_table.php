@@ -15,7 +15,7 @@ class CreatePriceListsTable extends Migration
     {
         Schema::create('price_lists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('price');
+            $table->float('price');
             $table->integer('room_type')->unsigned();
             $table->timestamps();
 
