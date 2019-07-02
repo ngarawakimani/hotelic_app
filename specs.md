@@ -1,12 +1,4 @@
-Nice to see you! You're almost in Codeline team. 
 
-This is a test assignment which covers RESTful API, DB, auth and form functionality in Laravel. Also, you have a good possibility to show your skills in JavaScript!
-
-Please, start the timer at the top right corner of that task (clock icon) when you're ready to read and go with task.
-
-We're looking forward to seeing your results!
-
-Good luck!
 
 =========================================================================
 
