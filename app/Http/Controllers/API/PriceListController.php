@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\PriceList;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\PriceList as PriceListResource;
 
 class PriceListController extends Controller
 {
@@ -14,7 +16,7 @@ class PriceListController extends Controller
      */
     public function index()
     {
-        //
+        return PriceListResource::collection(PriceList::paginate(10));
     }
 
     /**

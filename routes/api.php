@@ -21,6 +21,10 @@ Route::prefix('v1')->group(function () {
 
         Route::middleware('auth:api')->group(function () {
             Route::resource('/hotel', 'HotelController');
+            Route::resource('/room', 'RoomController');
+            Route::resource('/booking', 'BookingController');
+            Route::resource('/pricelist', 'PriceListController');
+            Route::resource('/roomtype', 'RoomTypeController');
         });
 
         Route::post('register', 'RegisterController@register');

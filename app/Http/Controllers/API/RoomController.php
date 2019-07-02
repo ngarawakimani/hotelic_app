@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Room;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\Room as RoomResource;
 
 class RoomController extends Controller
 {
@@ -14,7 +16,7 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        return RoomResource::collection(Room::paginate(10));
     }
 
     /**
